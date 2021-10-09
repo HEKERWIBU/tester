@@ -42,6 +42,8 @@ module.exports = {
   **User Info** - \`$getServerVar[prefix]userinfo\`
   **Rip** - \`$getServerVar[prefix]rip <@mention>\`
   **how gay** - \`$getServerVar[prefix]howgay <@mention>\`
+  **afk** - \`$getServerVar[prefix]afk <reason>\`
+  **setafk** - \`$getServerVar[prefix]setafk <role>\`
   
  
   
