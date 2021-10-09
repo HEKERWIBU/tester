@@ -69,25 +69,25 @@ bot.interactionCommand({
 });
 bot.onInteractionCreate();
 
-bot.joinCommand({ 
-        channel: "884597413057273876", 
-        code: `
-        $description[Hello $username Selemat Datang di Server **$serverName** selamat berbelanja
 
-__**Enjoy In The Server !!**__
-▬▬▬▬▬〚 ✯ 〛▬▬▬▬▬▬
-Important Channel Links
-
-Chat in
-**:speech_balloon:**┃ゝchat 
-
-Rules In
-**:closed_book:**┃ゝrules 
-
-Self Role In
-**:palm_tree:**┃ゝself-roles 
-
-Thanks For Join ^_^]`
+bot.joinCommand({
+  channel: "$getServerVar[wchannel]",
+  code: `
+  $if[$getServerVar[wchannel]!=]
+  $title[$getServerVar[wtitle]]
+  $description[$getServerVar[wmsg]]
+  $image[$getServerVar[wimg]]
+  $color[RANDOM]
+  $endif
+  
+  $if[$getServerVar[wdm]!=enabled]
+  $dm[$authorID]
+  $endif
+  
+  $if[$getServerVar[autorole]!=]
+  $giveRoles[$authorID;$getServerVar[autorole]]
+  $endif
+  `
 });
 bot.onJoined();
 
@@ -195,6 +195,12 @@ bot.variables({
   Bronze: "0",
   Platinum: "0",
   testi1: "",
+  wtitle: "",
+  wmsg: "",
+  wimg: "",
+  wchannel: "",
+  wdm: "disabled",
+  autorole: ""
   testi2: "",
   testi3: "",
   testi4: "",
