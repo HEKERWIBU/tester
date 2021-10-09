@@ -1,7 +1,7 @@
 module.exports = ({
 name: "setafk",
 code:`$if[$message==reset]
-$setservervar[afkroles;]
+$setservervar[afk_roles;]
 Kamu Telah Mereset **AFK ROLES**!
 $else
 $setservervar[afk_roles;$djseval[let res = mentions.roles.map(x=>x.id)
