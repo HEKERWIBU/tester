@@ -16,7 +16,7 @@ $endif
 $if[$getuservar[r;$mentioned[1]]!=]
 $setuservar[afk_pings;$sum[$getuservar[afk_pings;$mentioned[1]];1];$mentioned[1]]
 $setuservar[afk_mentions;$getuservar[afk_mentions;$mentioned[1]]\n\n**[$usertag](https://discord.com/channels/$guildid/$channelid/$messageid)**;$mentioned[1]]
-$sendmessage[**$usertag[$mentioned[1]]** is AFK!\n\n**Reason:** $getuservar[r;$mentioned[1]]  —   **$parseDate[$sub[$dateStamp;$getUserVar[time;$mentioned[1]]];time]** ago {delete:10s};no]
+$sendmessage[**$usertag[$mentioned[1]]** is AFK!\n\n**Reason:** $getuservar[r;$mentioned[1]]  —   **$parseDate[$sub[$dateStamp;$getUserVar[time;$mentioned[1]]];time]** lalu {delete:10s};no]
 $else
 $endif
 $onlyif[$checkcontains[$message[1];$getservervar[prefix]afk;$getservervar[prefix]busy]==false;]`})
