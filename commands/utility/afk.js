@@ -1,6 +1,6 @@
 module.exports =({
 name: "afk",
-code: `
+code: `$sendmessage[
  Saya Mengatur Anda Menjadi **AFK**!
 > **Alasan Ditentukan Oleh Anda:** 
 $get[reason]{delete:20s};no]
