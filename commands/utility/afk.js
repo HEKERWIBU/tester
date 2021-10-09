@@ -11,7 +11,7 @@ $else
 $endif
 $setuservar[time;$datestamp]
 $let[reason;$replacetext[$replacetext[$checkcondition[$message==];true;None];false;$message]]
-$onlyif[$getuservar[r]==;{description:You are already AFK!}{color:FF0000}]
-$onlyif[$mentioned[1]==;{description:To avoid any troubles, like pings for others when you are afk, mentions are not permitted in an AFK command!}{color:FF0000}]
-$onlyif[$replacetext[$replacetext[$hasperms[$authorid;manageserver];false;$checkcontains[$userroles[$authorid;ids;/];$joinsplittext[;]]];true;true]==true;{description:You do not have the necessary roles to execute this!}{color:FF0000}{delete:4s}]
+$onlyif[$getuservar[r]==;{description:Kamu Sudah AFK!}{color:FF0000}]
+$onlyif[$mentioned[1]==;{description:Untuk menghindari masalah, seperti ping untuk orang lain saat Kamu afk, mention tidak diizinkan dalam perintah AFK!!}{color:FF0000}]
+$onlyif[$replacetext[$replacetext[$hasperms[$authorid;manageserver];false;$checkcontains[$userroles[$authorid;ids;/];$joinsplittext[;]]];true;true]==true;{description:tidak memiliki roles yang diperlukan untuk menjalankan ini!}{color:FF0000}{delete:4s}]
 $textsplit[$getservervar[afk_roles];/]`})
