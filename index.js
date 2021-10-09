@@ -206,6 +206,7 @@ bot.variables({
   testi4: "",
   testi5: "",
   testi6: "",
+  r: "",
   afk_roles: "",
   Gold: "0",
   Silver: "0",
