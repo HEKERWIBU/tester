@@ -73,11 +73,12 @@ module.exports = {
   **WELCOME COLOR** - \`$getServerVar[prefix]set-wcolor <RED/GREEN/BLUE/YELLOW>\`
   **MESSAGE WELCOME** - \`$getServerVar[prefix]set-wmessage <Text>\`
   **WELCOME IMAGE** - \`$getServerVar[prefix]set-wimage <URL IMAGE>\`
+  **TEST WELCOME** - \`$getservervar[prefix]welcome\`
   **TITLE LEAVE** - \`$getServerVar[prefix]set-ltitle <Text>\`
   **LEAVE COLOR** - \`$getServerVar[prefix]set-lcolor <RED/GREEN/BLUE/YELLOW>\`
   **MESSAGE LEAVE** - \`$getServerVar[prefix]set-lmessage <Text>\`
   **LEAVE IMAGE** - \`$getServerVar[prefix]set-limage <URL IMAGE>\`
-
+  **TEST LEAVE** - \`$getservervar[prefix]leave\`
   
 
   
