@@ -44,6 +44,7 @@ module.exports = {
   **how gay** - \`$getServerVar[prefix]howgay <@mention>\`
   **afk** - \`$getServerVar[prefix]afk <reason>\`
   **setafk** - \`$getServerVar[prefix]setafk <role>\`
+  **Setup Ticket** - \`$getServerVar[prefix]ticket <Role[1]> <Role[2]> <Description>\`
   
  
   
