@@ -20,6 +20,30 @@ module.exports = {
   **Unbanned** -\`$getServerVar[prefix]unban <ID USER>\`
   **UnMute** - \`$getServerVar[prefix]unmute <@mention>\`
   
+  __**FUN**__
+  **Rip** - \`$getServerVar[prefix]rip <@mention>\`
+  **how gaY** - \`$getServerVar[prefix]howgay <@mention>\`
+  **achievement** - \`$getServerVar[prefix]achievement <Text>\`
+  **captcha** - \`$getServerVar[prefix]captcha <Text>\`
+  **communist** - \`$getServerVar[prefix]communist <@mention>\`
+  **ejected** - \`$getServerVar[prefix]ejected <@mention>\`
+  **gay** - \`$getServerVar[prefix]gay <@mention>\`
+  **facts** - \`$getServerVar[prefix]facts <@mention>\`
+  **hitler** - \`$getServerVar[prefix]hitler <@mention>\`
+  **invert** - \`$getServerVar[prefix]invert <@mention>\`
+  **jail** - \`$getServerVar[prefix]jail <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+  **** - \`$getServerVar[prefix] <@mention>\`
+
   __**MUSIC**__
   **Disconnect** \`$getServerVar[prefix]dc\`
   **Join** - \`$getServerVar[prefix]join\`
