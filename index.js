@@ -16,7 +16,7 @@ bot.onMessage({
 
 bot.status({
   text: ` N!help | $allmembersCount Member`, // put any text
-  type: "LISTENING", // LISTENING, PLAYING, WATCHING, COMPETING
+  type: "$getVar[status]", // LISTENING, PLAYING, WATCHING, COMPETING
   status: "online", // online, dnd, idle, invisible
   time: 75 // amount of times where you can change the bot status (if have multiple statuses)
 });
@@ -50,6 +50,16 @@ bot.command({
   $description[$message]
   $deletecommand
   `
+})
+
+bot.command({
+  name: "status",
+  code: `
+  Done, New Status **$message[1]**
+  $setvar[status;$message[1]]
+  $onlyif[$checkContains[$message[1];STREAMING;LISTENING;PLAYING;COMPETING]==true;{field:Invalid:> $getservervar[prefix]set-status <STREAMING/LISTENING/PLAYING/COMPETING>}{color:RED}]
+  $onlyForPerms[admin;Only Adminstator]
+`
 })
 
 bot.command({
@@ -190,14 +200,13 @@ bot.variables({
   lock: "",
   unlock: "",
   Cookie: "0",
-  mticket: "disable"
+  mticket: "disable",
   cticket: "",
-aticket: "",
-rticket: "",
-m2ticket: "",
-r2ticket: "",
-
-
+  aticket: "",
+  rticket: "",
+  m2ticket: "",
+  r2ticket: "",
+  status: "LISTENING",
   pesan: "0",
   Bronze: "0",
   Platinum: "0",
