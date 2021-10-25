@@ -32,17 +32,14 @@ module.exports = {
   **hitler** - \`$getServerVar[prefix]hitler <@mention>\`
   **invert** - \`$getServerVar[prefix]invert <@mention>\`
   **jail** - \`$getServerVar[prefix]jail <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
-  **** - \`$getServerVar[prefix] <@mention>\`
+  **presentation** - \`$getServerVar[prefix]presentation <@mention>\`
+  **simp** - \`$getServerVar[prefix]simp <@mention>\`
+  **shame** - \`$getServerVar[prefix]shame <@mention>\`
+  **shit** - \`$getServerVar[prefix]shit <@mention>\`
+  **trash** - \`$getServerVar[prefix]trash <@mention>\`
+  **triggered** - \`$getServerVar[prefix]triggered <@mention>\`
+  **wanted** - \`$getServerVar[prefix]wanted <@mention>\`
+  **wasted** - \`$getServerVar[prefix]wasted <@mention>\`
 
   __**MUSIC**__
   **Disconnect** \`$getServerVar[prefix]dc\`
