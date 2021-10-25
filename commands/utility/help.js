@@ -66,7 +66,13 @@ module.exports = {
   **afk** - \`$getServerVar[prefix]afk <reason>\`
   **setafk** - \`$getServerVar[prefix]setafk <role>\`
   **Setup Ticket** - \`$getServerVar[prefix]ticket <Role[1]> <Role[2]> <Description>\`
-  
+
+  __**ONLY OWNER**__
+  **STATUS BOT** - \`$getServerVar[prefix]set-status <STREAMING/PLAYING/LISTENING/COMPETING>\`
+  **TITLE WELCOME** - \`$getServerVar[prefix]set-wtitle <Text>\`
+  **WELCOME COLOR** - \`$getServerVar[prefix]set-wcolor <RED/GREEN/BLUE/YELLOW>\`
+  **MESSAGE WELCOME** - \`$getServerVar[prefix]set-wmessage <Text>\`
+  **WELCOME IMAGE** - \`$getServerVar[prefix]set-wimage <URL IMAGE>\`
  
   
 
