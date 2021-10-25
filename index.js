@@ -84,27 +84,23 @@ bot.onInteractionCreate();
 bot.joinCommand({
   channel: "$getServerVar[wchannel]",
   code: `
-  $if[$getServerVar[wchannel]!=]
-  $title[$getServerVar[wtitle]]
-  $description[$getServerVar[wmsg]]
-  $image[$getServerVar[wimg]]
-  $color[RANDOM]
-  $endif
-  
-  $if[$getServerVar[wdm]!=enabled]
-  $dm[$authorID]
-  $endif
-  
-  $if[$getServerVar[autorole]!=]
-  $giveRoles[$authorID;$getServerVar[autorole]]
-  $endif
+  $title[$getservervar[wtitle]]
+  $color[$getservervar[wcolor]]
+  $description[$getservervar[wmessage]]
+  $image[$getservervar[wimage]]
+  $onlyif[$getservervar[wchannel]!=;]
   `
 });
 bot.onJoined();
 
 bot.leaveCommand({ 
-        channel: "891184400044290109", 
-        code: `**Selamat tinggal $username, Kembali lagi ya kami tunggu kedatangan anda**`
+        channel: "$getservervar[lchannel]", 
+        code: `  
+  $title[$getservervar[ltitle]]
+  $color[$getservervar[lcolor]]
+  $description[$getservervar[lmessage]]
+  $image[$getservervar[limage]]
+  $onlyif[$getservervar[lchannel]!=;]`
 });
 bot.onLeave();
 
@@ -204,9 +200,13 @@ bot.variables({
   mticket: "disable",
   cticket: "",
   wtitle: "",
+  ltitle: "",
   wcolor: "RANDOM",
+  lcolor: "",
   wmessage: "",
-  wimage: """
+  lmessage: "",
+  wimage: "",
+  limage: "",
   aticket: "",
   rticket: "",
   m2ticket: "",
