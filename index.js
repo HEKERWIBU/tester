@@ -54,10 +54,11 @@ bot.command({
 
 bot.command({
   name: "status",
+  aliases: ["set-status"],
   code: `
-  Done, New Status **$message[1]**
-  $setvar[status;$message[1]]
-  $onlyif[$checkContains[$message[1];STREAMING;LISTENING;PLAYING;COMPETING]==true;{field:Invalid:> $getservervar[prefix]set-status <STREAMING/LISTENING/PLAYING/COMPETING>}{color:RED}]
+  Done, New Status **$toUppercase[$message[1]]**
+  $setvar[status;$toUppercase[$message[1]]]
+  $onlyif[$checkContains[$toUppercase[$message[1]];STREAMING;LISTENING;PLAYING;COMPETING]==true;{field:Invalid:> $getservervar[prefix]set-status <STREAMING/LISTENING/PLAYING/COMPETING>}{color:RED}]
   $onlyForPerms[admin;Only Adminstator]
 `
 })
