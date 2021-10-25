@@ -41,7 +41,15 @@ module.exports = [{
   > $get[welcome]
   $setServerVar[wimage;$get[welcome]]
   $let[welcome;$replaceText[$replaceText[$replaceText[$replaceText[$message;{username};$username];{user.tag};<@$authorID>];{server};$serverName];{member};$allMembersCount]]
-  $onlyIf[$message!=;{description:Send Message}{color:RED}]
+  $onlyIf[$message!=;{description:Send Message\n> User Name: {username}\n> User Tag: {user.tag}\n> Server Name: {server}\n> Member Count: {member}}{color:RED}]
   $onlyForPerms[admin;{description:Only Adminstator}{color:RED}]
   `
-},{}]
+},{
+  name: "set-wtitle",
+  aliases: ["wtitle"],
+  code: `
+  successfully, New Welcome Title **$message[1]**
+  $setServerVar[wtitle;$message[1]]
+  $onlyIf[$message[1]!=;]
+  $onlyForPerms[admin;{description:Only Adminstator}{color:RED}]
+  }]
