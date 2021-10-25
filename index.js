@@ -190,7 +190,14 @@ bot.variables({
   lock: "",
   unlock: "",
   Cookie: "0",
-  
+  mticket: "disable"
+  cticket: "",
+aticket: "",
+rticket: "",
+m2ticket: "",
+r2ticket: "",
+
+
   pesan: "0",
   Bronze: "0",
   Platinum: "0",
