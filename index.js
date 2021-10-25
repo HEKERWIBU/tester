@@ -203,6 +203,10 @@ bot.variables({
   Cookie: "0",
   mticket: "disable",
   cticket: "",
+  wtitle: "",
+  wcolor: "RANDOM",
+  wmessage: "",
+  wimage: """
   aticket: "",
   rticket: "",
   m2ticket: "",
