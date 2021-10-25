@@ -51,5 +51,5 @@ module.exports = [{
   successfully, New Welcome Title **$message[1]**
   $setServerVar[wtitle;$message[1]]
   $onlyIf[$message[1]!=;]
-  $onlyForPerms[admin;{description:Only Adminstator}{color:RED}]
+  $onlyForPerms[admin;{description:Only Adminstator}{color:RED}]`
   }]
