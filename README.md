@@ -11,19 +11,6 @@
 
 ### Note- This Repository is still under development
 
-### Commands-
-
-> Moderation Commands
-> Economy with Shop
-> Fun Commands
-> Image
-> Information
-> Developer
-> Music
-> Premium system 
-
-And more....!!
-
 ### Installation!
 
 Type `git-clone https://github.com/SupernovaBotDeveloper/dbd.jsMultipurposeBot`
